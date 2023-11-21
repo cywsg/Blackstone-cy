@@ -32,18 +32,18 @@ setup(
         "Intended Audience :: Science/Research",
         "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.11",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     license="Apache",
     install_requires=[
-        "spacy==2.1.8",
+        "spacy==3.7.0",
         "requests", # required for the legislation linker.
         "conllu",
         "numpy",
         "pandas"
         ],
     tests_require=["pytest", "pytest-cov"],
-    python_requires=">=3.6.0",
+    python_requires=">=3.11.0",
 )
